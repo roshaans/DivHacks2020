@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'classes/route_generator.dart';
+import 'pages/simulation.dart';
 import 'utils/themeData.dart';
 
 void main() {
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: vftTheme(),
-      initialRoute: '/',
-      onGenerateRoute: RouteGenerator.generateRoute,
+      home: Simulator(),
+      // initialRoute: '/',
+      // onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }

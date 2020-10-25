@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'classes/route_generator.dart';
-import 'pages/simulation.dart';
+import 'pages/browsing_ft.dart';
 import 'utils/themeData.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: vftTheme(),
-      home: Simulator(),
+      home: BrowseFT(),
       // initialRoute: '/',
       // onGenerateRoute: RouteGenerator.generateRoute,
     );

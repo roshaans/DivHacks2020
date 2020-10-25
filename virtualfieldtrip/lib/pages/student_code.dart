@@ -57,7 +57,7 @@ class _FTCodePageState extends State<FTCodePage> {
             ),
             RaisedButton(
               onPressed: () {
-                navigateToSimulation(_controller.text);
+                Navigator.of(context).pushNamed('/simulator', arguments: _controller.text);
               },
               color: Colors.black,
               child: Text(

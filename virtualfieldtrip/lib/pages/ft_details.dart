@@ -33,7 +33,7 @@ class _FTDetailsState extends State<FTDetails> {
               textAlign: TextAlign.justify,
             ),
             RaisedButton(
-                onPressed: navigateToSimulation,
+                onPressed: () => Navigator.of(context).pushNamed('/simulator', arguments: null),
                 color: Colors.blue,
                 child: Text(
                   "Start Simulation",

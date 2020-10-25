@@ -19,6 +19,15 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Simulator());
       case '/code':
         return MaterialPageRoute(builder: (_) => FTCodePage());
+      default:
+        return MaterialPageRoute(builder: (_) => Material(
+          child: Container(
+            color: Colors.white,
+            child: Center(
+              child: Text("Sorry, but there as an error. Please restart the app."),
+            ),
+          ),
+        ));
     }
   }
 }
